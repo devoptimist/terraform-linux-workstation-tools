@@ -6,8 +6,7 @@ This module connects via ssh and installs some chef related tools.
 ```hcl
 module "workstation_names" {
   source                     = "devoptimist/workstation-tools/linux"
-  version                    = "0.0.2"
-  workstation_use_chocolatey = true
+  version                    = "0.0.3"
   workstation_ips            = ["192.168.0.1", "192.168.0.2", "192.168.0.3"]
   winrm_password             = "MyP@ssW0rd!"
   winrm_user                 = "myuser"

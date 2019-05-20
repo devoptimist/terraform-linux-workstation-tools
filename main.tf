@@ -27,7 +27,7 @@ resource "null_resource" "workstation_base_install" {
 
   provisioner "remote-exec" {
     inline = [
-      "/home/${var.ssh_user}/install_ws.sh"
+      "bash -x /home/${var.ssh_user}/install_ws.sh"
     ]
   }
 }
