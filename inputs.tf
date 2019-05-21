@@ -1,3 +1,8 @@
+variable "template_path" {
+  type    = "sting"
+  default = "${file("${path.module}/templates/install_ws.sh")"
+}
+
 variable "chef_workstation_dl_url" {
   type    = "string"
   default = "https://packages.chef.io/files/stable/chef-workstation/0.2.53/el/6/chef-workstation-0.2.53-1.el6.x86_64.rpm"

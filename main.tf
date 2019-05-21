@@ -1,5 +1,6 @@
 data "template_file" "install_ws" {
-  template = "${file("${path.module}/templates/install_ws.sh")}"
+  # template = "${file("${path.module}/templates/install_ws.sh")}"
+  template = "${var.template_path}"
 
   vars {
     chef_workstation_dl_url  = "${var.chef_workstation_dl_url}"
@@ -31,4 +32,3 @@ resource "null_resource" "workstation_base_install" {
     ]
   }
 }
-
