@@ -23,3 +23,8 @@ variable "help_file_url" {
   type    = "string"
   default = ""
 }
+
+variable "hab_version" {
+  type    = "string"
+  default = "0.81.0"
+}

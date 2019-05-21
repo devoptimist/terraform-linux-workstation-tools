@@ -3,7 +3,8 @@ data "template_file" "install_ws" {
 
   vars {
     chef_workstation_dl_url  = "${var.chef_workstation_dl_url}",
-    help_file_url            = "${var.help_file_url}"
+    help_file_url            = "${var.help_file_url}",
+    hab_version              = "${var.hab_version}"
   }
 }
 

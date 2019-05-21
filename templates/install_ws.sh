@@ -2,7 +2,7 @@
 
 sudo yum install -y vim git
 sudo rpm -Uhv ${chef_workstation_dl_url}
-curl https://raw.githubusercontent.com/habitat-sh/habitat/master/components/hab/install.sh | sudo bash
+curl https://raw.githubusercontent.com/habitat-sh/habitat/master/components/hab/install.sh | sudo bash -s -- -v ${hab_version}
 sudo hab license accept
 hab license accept
 %{ if help_file_url != "" } 
