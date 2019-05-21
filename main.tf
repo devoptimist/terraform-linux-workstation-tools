@@ -1,5 +1,5 @@
 data "template_file" "install_ws" {
-  template = "${var.template_path == "" ? file("${path.module}/templates/install_ws.sh") : var.template_path}"
+  template = "${file("${path.module}/templates/install_ws.sh")}"
 
   vars {
     chef_workstation_dl_url  = "${var.chef_workstation_dl_url}"
