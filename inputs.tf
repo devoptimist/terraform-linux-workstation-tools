@@ -18,3 +18,8 @@ variable "ssh_password" {
 variable "ssh_user" {
   type    = "string"
 }
+
+variable "help_file_url" {
+  type    = "string"
+  default = ""
+}

@@ -2,7 +2,8 @@ data "template_file" "install_ws" {
   template = "${file("${path.module}/templates/install_ws.sh")}"
 
   vars {
-    chef_workstation_dl_url  = "${var.chef_workstation_dl_url}"
+    chef_workstation_dl_url  = "${var.chef_workstation_dl_url}",
+    help_file_url            = "${var.help_file_url}"
   }
 }
 
