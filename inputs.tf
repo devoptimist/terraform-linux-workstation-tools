@@ -1,6 +1,6 @@
-variable "chef_workstation_dl_url" {
+variable "chef_workstation_version" {
   type    = "string"
-  default = "https://packages.chef.io/files/stable/chef-workstation/0.2.53/el/6/chef-workstation-0.2.53-1.el6.x86_64.rpm"
+  default = "0.2.48"
 }
 
 variable "workstation_count" {
