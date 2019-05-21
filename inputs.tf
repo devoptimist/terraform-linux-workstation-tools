@@ -1,6 +1,6 @@
 variable "template_path" {
-  type    = "sting"
-  default = "${file("${path.module}/templates/install_ws.sh")"
+  type    = "string"
+  default = ""
 }
 
 variable "chef_workstation_dl_url" {
